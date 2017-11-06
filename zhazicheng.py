@@ -1,7 +1,7 @@
 Python 2.7.13 (v2.7.13:a06454b1afa1, Dec 17 2016, 20:42:59) [MSC v.1500 32 bit (Intel)] on win32
 Type "copyright", "credits" or "license()" for more information.
 >>> 
-================= RESTART: D:\1617193139²é×Ó³Ç\tmp\test1.py =================
+================= RESTART: D:\1617193139Â²Ã©Ã—Ã“Â³Ã‡\tmp\test1.py =================
 >>> zzc=Employee("zzc",'39','161','test1.py)
 	     
 SyntaxError: EOL while scanning string literal
