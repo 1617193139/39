@@ -1,0 +1,47 @@
+string="abcdefg  acbdgef  abcdgfe  cadbgfe"
+y='123@qq.comaaa@163.combbb@126.comasdfasfs33333@adf.com'
+
+
+>>> import re
+>>> string="abcdefg  acbdgef  abcdgfe  cadbgfe"
+>>> string
+'abcdefg  acbdgef  abcdgfe  cadbgfe'
+>>> re.findall('\w', string)
+['a', 'b', 'c', 'd', 'e', 'f', 'g', 'a', 'c', 'b', 'd', 'g', 'e', 'f', 'a', 'b',
+ 'c', 'd', 'g', 'f', 'e', 'c', 'a', 'd', 'b', 'g', 'f', 'e']
+>>> re.findall('\w+', string)
+['abcdefg', 'acbdgef', 'abcdgfe', 'cadbgfe']
+>>>
+>>> y='123@qq.comaaa@163.combbb@126.comasdfasfs33333@adfcom'
+>>> y='123@qq.comaaa@163.combbb@126.comasdfasfs33333@adf.com'
+>>> test_list = ['first', 'seconde']
+>>> test_list
+['first', 'seconde']
+>>> test_list[0]
+'first'
+>>> test_list[1]
+'seconde'
+>>> for item in test_list:
+...     print item
+  File "<stdin>", line 2
+    print item
+             ^
+SyntaxError: Missing parentheses in call to 'print'
+>>> for item in test_list:
+...     print(item)
+...
+first
+seconde
+>>>
+Python 2.7.14 (v2.7.14:84471935ed, Sep 16 2017, 20:25:58) [MSC v.1500 64 bit (AMD64)] on win32
+Type "copyright", "credits" or "license()" for more information.
+
+>>> y='123@qq.comaaa@163.combbb@126.comasdfasfs33333@adfcom'
+
+>>> import re
+
+>>> re.findall('\w+@(qq|163|126).com', y)
+['qq', '163', '126']
+
+>>> re.findall('\w+@(?:qq|163|126).com', y)
+['123@qq.com', 'aaa@163.com', 'bbb@126.com']
